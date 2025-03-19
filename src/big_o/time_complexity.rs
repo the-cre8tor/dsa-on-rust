@@ -1,4 +1,5 @@
-// Time complexity describes how long an algorithms takes to run as it input grows.
+// Time complexity describes how long an algorithms
+// takes to run as it input grows.
 
 // [time complexity]: linear time - O(n)
 pub fn add_up_to(value: u64) {
@@ -42,5 +43,19 @@ pub fn all_pairs(value: u64) {
         for j in 0..=value {
             println!("pairs printer: {},{}", i, j);
         }
+    }
+}
+
+// [time complexity]: linear time - O(n)
+pub fn log_at_least_5(value: u64) {
+    for item in 1..=u64::max(5, value) {
+        println!("{}", item);
+    }
+}
+
+// [time complexity]: constant time - O(1)
+pub fn log_at_most_5(value: u64) {
+    for item in 1..=u64::min(5, value) {
+        println!("{}", item);
     }
 }
