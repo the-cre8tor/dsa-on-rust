@@ -8,3 +8,4 @@ name = "dsa"
 path = "src/lib.rs"
 
 [dependencies]
+regex = { version = "1", default-features = false}

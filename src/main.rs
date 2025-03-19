@@ -1,6 +1,9 @@
-use dsa::big_o::{
-    space_complexity::{double, sum_array},
-    time_complexity::{add_up_lite, add_up_to, all_pairs, count_up_and_down, log_at_most_5},
+use dsa::{
+    big_o::{
+        space_complexity::{double, sum_array},
+        time_complexity::{add_up_lite, add_up_to, all_pairs, count_up_and_down, log_at_most_5},
+    },
+    problem_solving_approach::{char_count, char_count_lite},
 };
 
 fn main() {
@@ -14,4 +17,7 @@ fn main() {
     let _b = sum_array(&arr);
     let double = double(&arr);
     println!("double the value: {:?}", double);
+
+    let counter = char_count("Helloo hi!");
+    println!("{:?}", counter);
 }
