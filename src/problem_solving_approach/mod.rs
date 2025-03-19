@@ -99,32 +99,32 @@ How do you improve at solving a problem?
 */
 
 pub fn char_count(value: &str) -> HashMap<char, u32> {
-    let mut chard = HashMap::new();
+    let mut map = HashMap::new();
 
     for char in value.to_lowercase().chars() {
         if char.is_alphanumeric() {
-            let value = chard.get(&char);
+            let value = map.get(&char);
 
             if value.is_some() {
                 let item = value.unwrap();
-                chard.insert(char, item + 1);
+                map.insert(char, item + 1);
             } else {
-                chard.insert(char, 1);
+                map.insert(char, 1);
             }
         }
     }
 
-    chard
+    map
 }
 
 pub fn char_count_lite(value: &str) -> HashMap<char, u32> {
-    let mut chard = HashMap::new();
+    let mut map = HashMap::new();
 
     for char in value.to_lowercase().chars() {
         if char.is_alphanumeric() {
-            *chard.entry(char).or_insert(0) += 1;
+            *map.entry(char).or_insert(0) += 1;
         }
     }
 
-    chard
+    map
 }
