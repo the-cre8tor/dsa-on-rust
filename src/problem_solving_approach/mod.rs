@@ -1,4 +1,4 @@
-use regex::Regex;
+use std::collections::HashMap;
 
 /**
  What is an Algorithm?
@@ -32,64 +32,53 @@ How do you improve at solving a problem?
     - Creating pointers that correspond to index positions
     - Moving toward beginning, end, or middle based on conditions
 
- _Sliding Window Pattern_
+    3. Sliding Window Pattern
+    - Creating a window that either expands or contracts
+    - Useful for keeping track of a subset of data in an array/string
 
- - Creating a window that either expands or contracts
- - Useful for keeping track of a subset of data in an array/string
+    4. Divide and Conquer Pattern
+    - Dividing data into smaller chunks
+    - Usually involves array or strings
+    - Decreases time complexity
 
- _Divide and Conquer Pattern_
+    5. Recursion Pattern
+    - Function that calls itself
+    - Useful for tasks that have repeated subtasks
 
- - Dividing data into smaller chunks
- - Usually involves array or strings
- - Decreases time complexity
+    6. Dynamic Programming Pattern
+    - Breaking down complex problems into simpler subproblems
+    - Storing results for future use (memoization)
 
- _Recursion Pattern_
+    7. Greedy Pattern
+    - Making locally optimal choices at each step
+    - Hoping to find global optimum
 
- - Function that calls itself
- - Useful for tasks that have repeated subtasks
+    8. Backtracking Pattern
+    - Building candidates to the solution incrementally
+    - Abandoning candidates ("backtracking") if they don't satisfy the constraints
 
- _Dynamic Programming Pattern_
+    9. Two Heaps Pattern
+    - Using two heaps to track median of a set of numbers
+    - One min heap and one max heap
 
- - Breaking down complex problems into simpler subproblems
- - Storing results for future use (memoization)
+    10. Binary Search Pattern
+    - Searching a sorted array by repeatedly dividing the search interval in half
 
- _Greedy Pattern_
+    11. State Machine Pattern
+    - Modeling solutions using finite state machines
+    - Useful for parsing and processing sequential data
 
- - Making locally optimal choices at each step
- - Hoping to find global optimum
+    12. Graph Traversal Patterns
+    - Depth-First Search (DFS)
+    - Breadth-First Search (BFS)
 
- _Backtracking Pattern_
+    13. Tree Patterns
+    - Various traversal methods
+    - Construction and manipulation techniques
 
- - Building candidates to the solution incrementally
- - Abandoning candidates ("backtracking") if they don't satisfy the constraints
+*/
 
- _Two Heaps Pattern_
-
- - Using two heaps to track median of a set of numbers
- - One min heap and one max heap
-
- _Binary Search Pattern_
-
- - Searching a sorted array by repeatedly dividing the search interval in half
-
- _State Machine Pattern_
-
- - Modeling solutions using finite state machines
- - Useful for parsing and processing sequential data
-
- _Graph Traversal Patterns_
-
- - Depth-First Search (DFS)
- - Breadth-First Search (BFS)
-
- _Tree Patterns_
-
- - Various traversal methods
- - Construction and manipulation techniques
-
- */
 // Workshop ->
-use std::collections::HashMap;
 
 /**
 - Problem: Write a function which takes two numbers and returns their sum.
