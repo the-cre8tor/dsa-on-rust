@@ -1,9 +1,4 @@
-pub fn add_up_to(value: u32) {
-    let mut accumulator: u32 = 0;
+// Big O notation describes the worst-case scenario and expresses
+// the growth rate of an algorithm as its input grows in size.
 
-    for item in 1..=value {
-        accumulator += item;
-    }
-
-    println!("Result: {}", accumulator);
-}
+pub mod time_complexity;
