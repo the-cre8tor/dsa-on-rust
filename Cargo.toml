@@ -3,4 +3,8 @@ name = "dsa-on-rust"
 version = "0.1.0"
 edition = "2024"
 
+[lib]
+name = "dsa"
+path = "src/lib.rs"
+
 [dependencies]
