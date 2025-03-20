@@ -5,7 +5,8 @@ use dsa::{
     },
     problem_solving::{
         approach::char_count,
-        patterns::{anagram_lite, same_linked, validate_anagram},
+        frequency_counter::{anagram_lite, same_linked},
+        multitple_pointers::sum_zero,
     },
 };
 
@@ -27,7 +28,8 @@ fn main() {
     let value_one = [1, 2, 3, 3];
     let value_two = [4, 1, 9, 9];
     let _find_same = same_linked(&value_one, &value_two);
-    let anagram = anagram_lite("hoxxmeu", "ohmexxw");
+    let _anagram = anagram_lite("hoxxmeu", "ohmexxw");
+    let array = sum_zero(&[-4, -3, -2, -1, 0, 1, 2, 1, 10]);
 
-    println!("Same value: {}", anagram);
+    println!("Same value: {:?}", array);
 }

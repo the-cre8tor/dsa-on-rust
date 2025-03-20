@@ -1,2 +1,3 @@
 pub mod approach;
-pub mod patterns;
+pub mod frequency_counter;
+pub mod multitple_pointers;
