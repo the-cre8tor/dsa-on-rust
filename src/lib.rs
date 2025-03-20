@@ -1,2 +1,2 @@
 pub mod big_o;
-pub mod problem_solving_approach;
+pub mod problem_solving;
