@@ -6,7 +6,7 @@ use dsa::{
     problem_solving::{
         approach::char_count,
         frequency_counter::{anagram_lite, same_linked},
-        multitple_pointers::sum_zero,
+        multitple_pointers::{count_unique_values, sum_zero},
     },
 };
 
@@ -29,7 +29,10 @@ fn main() {
     let value_two = [4, 1, 9, 9];
     let _find_same = same_linked(&value_one, &value_two);
     let _anagram = anagram_lite("hoxxmeu", "ohmexxw");
-    let array = sum_zero(&[-4, -3, -2, -1, 0, 1, 2, 1, 10]);
+    let _array = sum_zero(&[-4, -3, -2, -1, 0, 1, 2, 1, 10]);
 
-    println!("Same value: {:?}", array);
+    let mut vector = Vec::from_iter([1, 2, 2, 5, 7, 7, 99]);
+    let unique = count_unique_values(&mut vector);
+
+    println!("Same value: {:?}", unique);
 }
