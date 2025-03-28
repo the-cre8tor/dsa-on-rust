@@ -7,6 +7,7 @@ use dsa::{
         approach::char_count,
         frequency_counter::{anagram_lite, same_linked},
         multitple_pointers::{count_unique_values, sum_zero},
+        sliding_windows::max_sub_array_sum,
     },
 };
 
@@ -32,7 +33,8 @@ fn main() {
     let _array = sum_zero(&[-4, -3, -2, -1, 0, 1, 2, 1, 10]);
 
     let mut vector = Vec::from_iter([1, 2, 2, 5, 7, 7, 99]);
-    let unique = count_unique_values(&mut vector);
+    let _unique = count_unique_values(&mut vector);
+    let sliding = max_sub_array_sum(&[2, 6, 9, 2, 1, 8, 5, 6, 3], 3);
 
-    println!("Same value: {:?}", unique);
+    println!("Same value: {:?}", sliding);
 }
